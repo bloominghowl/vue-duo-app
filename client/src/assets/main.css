@@ -1,35 +1,108 @@
-@import './base.css';
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+/* Global Styles */
+:root {
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+* {
+  box-sizing: border-box;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+/* Body Styles */
+body {
+  background-color: #fcf8e7;
+  background-image: url('https://images.vexels.com/content/242905/preview/dandelion-and-butterflies-filled-stroke-7725c1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+
+/*  header styles*/
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: 'Dancing Script', cursive;
+  font-size: larger;
+  color: rgb(253, 168, 9);
+  animation: slideInFromLeft 3s ease-out;
+}
+
+/* li styles */
+li {
+  list-style: none;
+}
+
+/* animation styles fpr header*/
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+/* Greeting styles */
+.greeting {
+  text-align: center;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.enquiry {
+  text-align: center;
+}
+
+/* opacity styles*/
+.greeting, .enquiry {
+  background-color: rgba(255, 255, 255, 0.5); 
+  border-radius: 5px;
+}
+
+/* H1 styles*/
+h1 {
+  font-family: 'Dancing script';
+  font-size: 2.5em;
+  color: #4b4a4a;
+}
+
+/* H2 styles*/
+h3 {
+  font-family: 'Dancing script';
+  font-size: 1.5em;
+  color: #666;
+}
+
+/* Buttton styles*/
+.btn-click button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.btn-click button:hover {
+  opacity: 0.8;
+}
+
+.btn-click button:nth-child(1) {
+  background-color: #31be36;    /* Green background color for finance*/
+}
+
+.btn-click button:nth-child(2) {
+  background-color: #1f8bfd;    /* Blue background for todo list*/
 }
