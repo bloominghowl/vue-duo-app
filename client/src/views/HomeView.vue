@@ -2,7 +2,7 @@
 export default {
   methods: {
     goToFinanceTracker() {
-      window.location.href = 'https://finance-track-vue.vercel.app';
+      window.location.href = 'https://klenu.vercel.app';
     },
     goToTodoList() {
       window.location.href = 'https://dziku.vercel.app';
