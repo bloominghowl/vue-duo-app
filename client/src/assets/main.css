@@ -100,9 +100,11 @@ h3 {
 }
 
 .btn-click button:nth-child(1) {
-  background-color: #31be36;    /* Green background color for finance*/
+  background-color: #6288f3;
+  box-shadow: var(--box-shadow);    /* Green background color for finance*/
 }
 
 .btn-click button:nth-child(2) {
-  background-color: #1f8bfd;    /* Blue background for todo list*/
+  background-color: #1c8d34d2;    /* Blue background for todo list*/
+  box-shadow: var(--box-shadow); 
 }
